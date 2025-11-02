@@ -21,27 +21,24 @@
 
         <div class="opcion">
             <h3> Adicionar tarefas </h3>
-            <input class="tarefas" type="text" placeholder="Nome da tarefa">
-            <button>Adicionar</button>
+            <input class="tarefas" id="nomeTarefa" type="text" placeholder="Nome da tarefa">
+            <button type="submit">Adicionar</button>
         </div>
 
-        <section class="tituloTarefas">
+        <section id="tarefasContador" class="tituloTarefas">
             <div class="textoTituloTarefas">
                 <h3> Minhas tarefas</h3>
                 <p>Veja todas as suas tarefas criadas </p>
             </div>
-            <h4>0 de 20 <strong>concluídas</strong></h4>
+            <h4 id="contador">0 de 0 <strong>concluídas</strong></h4>
         </section>
 
-        <section class="minhasTarefas">
-            <div class="Tarefas">
-        
+        <section id="mainBox">
+            <div class="Vazio" id="vazio"> 
+                <p class="emoji"> 😭 </p>
+                <p>Nenhum registro encontrado</p>
             </div>
-        </div>
-        <div class="Vazio"> 
-            <p class="emoji"> 😭 </p>
-            <p>Nenhum registro encontrado</p>
-        </div>
+        </section>
 
         <script src="../main.js"></script>
 </body>

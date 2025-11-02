@@ -21,8 +21,10 @@
 
         <div class="opcion">
             <h3> Adicionar tarefas </h3>
-            <input class="tarefas" type="text" placeholder="Nome da tarefa">
-            <button>Adicionar</button>
+            <form id="addForm">
+                <input class="tarefas" type="text" placeholder="Nome da tarefa">
+                <button>Adicionar</button>
+            </form>
         </div>
 
         <section class="tituloTarefas">
@@ -30,7 +32,7 @@
                 <h3> Minhas tarefas</h3>
                 <p>Veja todas as suas tarefas criadas </p>
             </div>
-            <h4>0 de 20 <strong>concluídas</strong></h4>
+            <h4>0 de 0 <strong>concluídas</strong></h4>
         </section>
 
         <section class="minhasTarefas">
@@ -40,20 +42,22 @@
         </section>
 
         <section id="mainBox">
-            <div class="taskBox">
-                <div class="taskContent">
+            <div class="tarefaBox">
+                <div class="conteudoTarefa">
                     <input type="checkbox" id="check">
-                    <div class="taskText">
+                    <div class="tarefaText">
                         <h4>Estudar JavaScript</h4>
                         <p>Criada em: 11 de out 2025</p>
                     </div>
                     
                 </div>
-                <i class="fa-solid fa-trash fa-lg" style="color: #de015d;"></i>
+                <i id="lixo" class="fa-solid fa-trash fa-lg" style="color: #de015d;"></i>
             </div>
             
         </section>
     </div>
+    
+        <script src="../main.js"></script>
 
 </body>
 </html>
